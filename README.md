@@ -8,8 +8,8 @@ $ ssh-keygen
 
 **Generate public key**
 
-$ ssh-copy-id -i ~/.ssh/id_rsa.pub <remote-host>
+$ ssh-copy-id -i ~/.ssh/id_rsa.pub &lt;remote-host&gt;
 
 **Remote login**
 
-$ ssh <remote-host>
+$ ssh &lt;remote-host&gt;
