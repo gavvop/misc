@@ -6,7 +6,7 @@
 
 $ ssh-keygen
 
-**Generate public key**
+**Send the key to server**
 
 $ ssh-copy-id -i ~/.ssh/id_rsa.pub &lt;remote-host&gt;
 
