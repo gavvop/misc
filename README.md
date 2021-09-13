@@ -8,11 +8,11 @@
 
 **Send the key to server**
 
-```$ ssh-copy-id -i ~/.ssh/id_rsa.pub &lt;remote-host&gt;```
+```$ ssh-copy-id -i ~/.ssh/id_rsa.pub <remote-host>```
 
 **Remote login**
 
-```$ ssh &lt;remote-host&gt;```
+```$ ssh <remote-host>```
 
 ### Misc
 
@@ -22,15 +22,15 @@
 
 **PID of a process listening on port**
 
-```lsof -i :&lt;port&gt;```
+```lsof -i :<port>```
 
 **Kill a process listening on port**
   
-```fuser -k &lt;porta&gt;/tcp```
+```fuser -k <porta>/tcp```
 
 **Find all files that contains "word"**
   
-```grep -r --include "*" "work" .```
+```grep -r --include "*" "word" .```
 
 **Show files sort by mod date with dimensions in GB**
   
@@ -42,7 +42,7 @@
 
 ## Node
 
-** Show NPM global links **
+**Show NPM global links**
 
 ```npm ls -g --depth=0 --link=true```
 
