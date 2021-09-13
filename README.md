@@ -39,3 +39,10 @@
 **Show a file by chunks**
   
 ```dd if=very-big-chonky.log of=/dev/stdout bs=1024 count=1 skip=1024```
+
+## Node
+
+** Show NPM global links **
+
+```npm ls -g --depth=0 --link=true```
+
