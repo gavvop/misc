@@ -1,21 +1,5 @@
 # Miscellanea
 
-### SSH Login without Password
-
-**Generate public key**
-
-```ssh-keygen```
-
-**Send the key to server**
-
-```ssh-copy-id -i ~/.ssh/id_rsa.pub <remote-host>```
-
-**Remote login**
-
-```ssh <remote-host>```
-
-### Misc
-
 **Kill Angular**
 
 ```kill $(lsof -t -i:4200)```
