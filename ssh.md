@@ -4,15 +4,21 @@
 
 Generate public key
 
-```ssh-keygen```
+```
+ssh-keygen
+```
 
 Send the key to server
 
-```ssh-copy-id -i ~/.ssh/id_rsa.pub <remote-host>```
+```
+ssh-copy-id -i ~/.ssh/id_rsa.pub <remote-host>
+```
 
 Remote login
 
-```ssh <remote-host>```
+```
+ssh <remote-host>
+```
 
 
 ## Run ssh-agent on windows and add imported keys
@@ -35,3 +41,11 @@ Open a cmd/ps with the proper user
 ```
 PS D:\code> ssh-add <private-key-path>
 ```
+
+## SSH port forward
+
+```
+ssh -L local_port:destination_server_ip:remote_port user@hostname
+```
+
+
