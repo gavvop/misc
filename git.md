@@ -14,3 +14,8 @@ On destination
 git apply diff.patch
 ```
 
+## Go back last two commit
+
+```
+git reset --soft HEAD~2
+```
