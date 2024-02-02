@@ -33,3 +33,8 @@ Export a table data as json
 ```
 copy (select row_to_json(t) from (select * from my_table) t) to '/tmp/table.json'
 ```
+
+Connect to remote db
+```
+psql -h <host> -p <port> -U <username> <dbname>
+```
