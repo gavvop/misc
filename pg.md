@@ -26,13 +26,20 @@ postgres=# select * from <table>;
 ```
 
 
-## Misc
+## Import/export
 
 Export a table data as json
 
 ```
 copy (select row_to_json(t) from (select * from my_table) t) to '/tmp/table.json'
 ```
+
+Import a .arc
+```
+copy my_table from '/tmp/my_table.arc' with binary;
+```
+
+## Misc
 
 Connect to remote db
 ```
