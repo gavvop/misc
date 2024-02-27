@@ -8,6 +8,9 @@
 
 ```lsof -i :<port>```
 
+**(same on Windows)**
+ ```Get-NetTCPConnection | Where-Object LocalPort -eq <port> | ForEach-Object { Get-Process -Id $_.OwningProcess } | Stop-Process```
+
 **Kill a process listening on port**
   
 ```fuser -k <porta>/tcp```
