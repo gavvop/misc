@@ -25,3 +25,10 @@ git reset --soft HEAD~2
 ```
 git log --merges --first-parent <DEST> --grep="Merge branch '<SRC>'" --oneline --reverse | head -n 1
 ```
+
+
+## Show merge for \<BRANCH\> 
+
+```
+git log --date=iso --pretty=format:"%ad %h - %an : %s" --merges <BRANCH>
+```
