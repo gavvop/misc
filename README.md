@@ -1,29 +1,35 @@
 # Miscellanea
 
-**Kill Angular**
+Personal collection of cheatsheets, config files and small scripts.
 
-```kill $(lsof -t -i:4200)```
+## Cheatsheets
 
-**PID of a process listening on port**
+| File | Topic |
+| --- | --- |
+| [shell.md](cheatsheets/shell.md) | Processes, ports, files (Linux / Windows) |
+| [git.md](cheatsheets/git.md) | Git |
+| [docker.md](cheatsheets/docker.md) | Docker |
+| [kubernetes.md](cheatsheets/kubernetes.md) | Kubernetes (`kubectl`) |
+| [node.md](cheatsheets/node.md) | Node.js / npm |
+| [postgresql.md](cheatsheets/postgresql.md) | PostgreSQL (`psql`) |
+| [ssh.md](cheatsheets/ssh.md) | SSH |
+| [nginx.md](cheatsheets/nginx.md) | nginx |
 
-```lsof -i :<port>```
+## Configs
 
-**(same on Windows)**
+| File | Description |
+| --- | --- |
+| [configs/nginx/angular-spa.conf](configs/nginx/angular-spa.conf) | nginx server block for serving an Angular SPA |
+| [configs/vscode/settings.json](configs/vscode/settings.json) | VS Code user settings |
 
- ```Get-NetTCPConnection | Where-Object LocalPort -eq <port> | ForEach-Object { Get-Process -Id $_.OwningProcess } | Stop-Process```
+## Scripts
 
-**Kill a process listening on port**
-  
-```fuser -k <porta>/tcp```
+| File | Description |
+| --- | --- |
+| [scripts/node/generate-jwks.mjs](scripts/node/generate-jwks.mjs) | Generate an RS256 key pair and export it as a JWKS file |
 
-**Find all files that contains "word"**
-  
-```grep -r --include "*" "word" .```
+## Conventions
 
-**Show files sort by mod date with dimensions in GB**
-  
-```ls -tl --block-size=G```
-
-**Show a file by chunks**
-  
-```dd if=very-big-chonky.log of=/dev/stdout bs=1024 count=1 skip=1024```
+- One file per topic, in English.
+- `#` title, `##` sections, one command per fenced code block with a language tag.
+- Placeholders are written as `<name>`.
